@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluestock Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <img src="blue.png" alt="Bluestock Logo" class="logo">
+        <form action="#" method="post">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <div class="password-label-container">
+                <label for="password">Password</label>
+                <a href="forget.html" class="forgot-password">Forgot Password?</a>
+            </div>
+            <div class="password-container">
+                <input type="password" id="password" name="password" required>
+                <span class="password-toggle"><i class="eye-icon"></i></span>
+            </div>
+            <div class="captcha-container">
+                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+            </div>
+            
+            <label class="keep-signed-in">
+                <input type="checkbox" name="keep-signed-in" checked>
+                Keep me signed in
+            </label>
+            
+            <button type="submit">Login</button>
+        </form>
+        
+        <div class="alternate-login">
+            <div class="line"></div>
+            <span>or sign in with</span>
+            <div class="line"></div>
+        </div>
+        
+        <div class="google-login">
+            <img src="google.png" alt="Google Logo">
+            <span>Continue with Google</span>
+        </div>
+        
+        <a href="signup.html" class="create-account">Create an account</a>
+    </div>
+</body>
+</html>

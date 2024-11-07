@@ -1,0 +1,161 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.password-label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.password-label-container label {
+    margin-bottom: 0;
+}
+
+.password-label-container .forgot-password {
+    color: #6c63ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.password-label-container .forgot-password:hover {
+    text-decoration: underline;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-container .password-toggle .eye-icon {
+    font-size: 18px;
+}
+
+.captcha-container {
+    width: calc(100% - 24px);
+    margin: 20px auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.g-recaptcha {
+    transform: scale(0.95);
+    transform-origin: center;
+}
+
+.keep-signed-in {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.keep-signed-in input {
+    margin-right: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #5752d4;
+}
+
+.alternate-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #666;
+}
+
+.alternate-login .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.google-login img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.create-account {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,body{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+}
+
+.fa-brands {
+    font-size: 2em; /* Adjust as needed */
+    color: rgb(47, 47, 234);
+}
+.Startuplogo {
+    width: 300px; /* Adjust as needed */
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.BlueStockLogo {
+    width: 180px;
+    height: 100px;
+    object-fit: contain;
+}
